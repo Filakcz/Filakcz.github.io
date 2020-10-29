@@ -61,6 +61,27 @@
     color: #fff;
 }
 
+.velky{
+    font-size: 150px;
+    margin-left: 300px;
+    margin-top: -170px;
+}
+
+.caspismo{
+    font-size: 100px;
+}
+
+.velky2{
+    font-size: 150px;
+    margin-left: 350px;
+    margin-top: -160px;
+}
+
+.caspismo2{
+    font-size: 100px;
+    margin-top: 70px;
+}
+
 .app-text{
     width: 50%;
     float: left;

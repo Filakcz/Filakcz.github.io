@@ -1,0 +1,73 @@
+<html>
+        
+        
+<head>
+    <title>Filipův web</title>
+    <link rel="stylesheet", href="style.css">
+<script>
+    function startTime() {
+        var today = new Date();
+        var y = today.getFullYear();
+        var mo = today.getMonth() + 1;
+        var d = today.getDate();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        y = checkTime(y);
+        mo = checkTime(mo);
+        d = checkTime(d);
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        document.getElementById('txt2').innerHTML =
+        d + "." + mo + "." + y;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+    </script>    
+
+</head>
+
+
+<body onload="startTime()">
+
+
+
+           
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="logo"><img src="img/profilovka.jpg"></li>
+                <li><a href="index.html">Něco o mně</a></li>
+                <li><a href="index 2.html">Moje programy :)</a></li>
+                <li><a href="index 3.html">Galerie</a></li>
+                <li><a href="index4.html">Kontakty</a></li>
+                <li><a href="Cas.html" class="signup-btn"><span>Čas</span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="banner">
+        <div class="app-text">
+            <div class="caspismo">
+                Čas
+            </div>
+            <br>
+            <div id="txt" class="velky"></div> 
+            <div class="caspismo2">
+                Datum
+            </div>
+            <br>
+            <div id="txt2" class="velky2"></div> 
+        </div>
+        <div class="app-picture">
+        </div>
+    </div>
+
+</body>
+</html>
